@@ -4,16 +4,21 @@
 Servo myServo;
 
 void setup() {
-    myServo.attach(9);   // Signal pin
+    myServo.attach(9);
 }
 
 void loop() {
-    myServo.write(0);    // 0°
-    delay(1000);
+    myServo.write(0);
+    delay(500);
 
-    myServo.write(90);   // 90°
-    delay(1000);
+    myServo.write(45);
+    delay(500);
 
-    myServo.write(180);  // 180°
-    delay(1000);
+    myServo.write(90);
+    delay(500);
+
+    myServo.write(135);
+    delay(500);
+    myServo.write(180);
+    delay(500);
 }
