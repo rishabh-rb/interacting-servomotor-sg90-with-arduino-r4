@@ -1,0 +1,19 @@
+#include <Arduino.h>
+#include <Servo.h>
+
+Servo myServo;
+
+void setup() {
+    myServo.attach(9);   // Signal pin
+}
+
+void loop() {
+    myServo.write(0);    // 0°
+    delay(1000);
+
+    myServo.write(90);   // 90°
+    delay(1000);
+
+    myServo.write(180);  // 180°
+    delay(1000);
+}
